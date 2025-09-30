@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    color: #007bff;
+}
+
+main {
+    margin-right: 270px;
+    padding: 40px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Animation for Table Creation (Scaling) */
+.object-creation {
+    width: 200px;
+    height: 100px;
+    background-color: #4CAF50;
+    margin: 20px 0;
+    animation-name: createObject;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+@keyframes createObject {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+/* Animation for Data Flow (Movement) */
+.data-flow {
+    width: 50px;
+    height: 50px;
+    background-color: #2196F3;
+    position: relative;
+    margin: 20px 0;
+    animation-name: insertData;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes insertData {
+    0% {left: 0px;}
+    100% {left: 300px;}
+}
