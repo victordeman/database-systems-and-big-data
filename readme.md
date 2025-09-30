@@ -8,8 +8,8 @@ The module covers foundational database design and big data concepts, with pract
 View the live site: [https://victordeman.github.io/database-systems-and-big-data/](https://victordeman.github.io/database-systems-and-big-data/)
 
 ## Repository Structure
-, , ,
-database-systems-and-big-data/
+```
+Database-Systems-and-Big-Data/
 ├── README.md                  # Repository description, structure, and links
 ├── css/
 │   └── style.css              # Global CSS for layout, navigation, and animations
@@ -23,4 +23,4 @@ database-systems-and-big-data/
 ├── index.html                 # Main title page
 ├── summary.html               # Summary description page
 └── contents.html              # Content page with full index
-, , ,
+```
