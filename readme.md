@@ -8,3 +8,19 @@ The module covers foundational database design and big data concepts, with pract
 View the live site: [https://victordeman.github.io/database-systems-and-big-data/](https://victordeman.github.io/database-systems-and-big-data/)
 
 ## Repository Structure
+, , ,
+database-systems-and-big-data/
+├── README.md                  # Repository description, structure, and links
+├── css/
+│   └── style.css              # Global CSS for layout, navigation, and animations
+├── chapter1/
+│   ├── index.html             # Title page for Chapter 1
+│   ├── overview.html          # Sub-chapter 1.1: Overview of Databases
+│   ├── components.html        # Sub-chapter 1.2: Database System Components
+│   ├── advantages.html        # Sub-chapter 1.3: Advantages and Disadvantages
+│   ├── bigdata.html           # Sub-chapter 1.4: Big Data Introduction
+│   └── exercises.html         # Exercises with descriptions and animations
+├── index.html                 # Main title page
+├── summary.html               # Summary description page
+└── contents.html              # Content page with full index
+, , ,
