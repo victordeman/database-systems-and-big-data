@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Chapter 1 Exercises</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 1 – Exercises</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/feather.min.js"></script>
+  <link rel="stylesheet" href="../css/aos.css">
+  <script src="../js/aos.js"></script>
+  <style>
+    body { margin-right: 100px; }
+    @media (max-width: 640px) { body { margin-right: 70px; } }
+    .demo-box { @apply bg-green-500 w-48 h-32 my-6 mx-auto; animation: scaleUp 2s infinite; }
+    @keyframes scaleUp { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+    .demo-flow { @apply bg-blue-500 w-12 h-12 my-6 mx-auto; animation: moveRight 2s infinite; }
+    @keyframes moveRight { 0% { transform: translateX(0); } 100% { transform: translateX(200px); } }
+  </style>
 </head>
-<body>
-    <nav class="sidebar">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../summary.html">Summary</a></li>
-            <li><a href="../contents.html">Contents</a></li>
-            <li>Chapter 1
-                <ul>
-                    <li><a href="index.html">Chapter 1 Title</a></li>
-                    <li><a href="overview.html">1.1 Overview</a></li>
-                    <li><a href="components.html">1.2 Components</a></li>
-                    <li><a href="advantages.html">1.3 Advantages & Disadvantages</a></li>
-                    <li><a href="bigdata.html">1.4 Big Data Introduction</a></li>
-                    <li><a href="exercises.html">Exercises</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Chapter 1 Exercises</h2>
-        
-        <h3>Scenario Analysis</h3>
-        <p>Task: Identify a business scenario (e.g., an e-commerce store) and list how a database could improve operations (e.g., tracking orders, customers).</p>
-        <p>Example: Discuss how a hospital uses a database to manage patient records.</p>
-        
-        <h3>DBMS Exploration</h3>
-        <p>Task: Install and explore a DBMS (e.g., MySQL, SQLite, or PostgreSQL). Create a simple database and table (e.g., a table for storing student information with columns for ID, name, and email).</p>
-        <p>Animation: Below is a visualization of table creation (scaling from nothing to full size, representing initialization).</p>
-        <div class="object-creation"></div>
-        
-        <h3>Conceptual Questions</h3>
-        <p>Task: Answer questions like “What are the benefits of using a DBMS over a spreadsheet for a retail business?”</p>
-        <p>Animation: Below is a visualization of data flow into a database (moving from left to right, representing insertion).</p>
-        <div class="data-flow"></div>
-    </main>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Nav -->
+  <nav class="fixed right-0 top-0 h-full w-24 bg-gradient-to-b from-white to-blue-50 shadow-lg flex flex-col justify-center items-center space-y-8 z-50 rounded-l-lg" role="navigation">
+    ... <!-- same nav -->
+  </nav>
+
+  <section class="flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 px-6 py-20 min-h-screen">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800" data-aos="fade-up">
+        Chapter 1 – Practical Exercises
+      </h1>
+
+      <h2 class="text-2xl font-semibold mt-8">Scenario Analysis</h2>
+      <p class="text-gray-700">Identify a business scenario and explain how a database improves operations.</p>
+
+      <h2 class="text-2xl font-semibold mt-8">DBMS Exploration</h2>
+      <p class="text-gray-700">Create a simple table (animation shows the table “growing”).</p>
+      <div class="demo-box" data-aos="zoom-in"></div>
+
+      <h2 class="text-2xl font-semibold mt-8">Conceptual Questions</h2>
+      <p class="text-gray-700">What are the benefits of a DBMS over spreadsheets?</p>
+      <div class="demo-flow" data-aos="fade-left"></div>
+    </div>
+  </section>
+
+  <script>
+    feather.replace();
+    AOS.init({ duration: 800 });
+  </script>
 </body>
 </html>
